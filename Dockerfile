@@ -4,4 +4,4 @@ COPY dist/ /dist/
 
 WORKDIR /dist
 
-CMD ["sh", "-c", "static-web-server -d . --page404 index.html --page50x index.html"]
+CMD ["sh", "-c", "static-web-server -d . --page404 index.html --page50x index.html --health --host 0.0.0.0"]
